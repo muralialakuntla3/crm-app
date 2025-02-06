@@ -1,5 +1,5 @@
-FROM eclipse-temurin:21-jdk
-
+# New version of java base image in dockerhub:   FROM eclipse-temurin:21-jdk
+FROM openjdk:21
 # Set the working directory inside the container
 WORKDIR /app
 
