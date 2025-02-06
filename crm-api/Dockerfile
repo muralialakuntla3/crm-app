@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temurin:21-jdk
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,7 +8,7 @@ COPY . .
 
 # Build the application using Maven
 RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw package -DskipTests
 
 # Expose the application port
 EXPOSE 8080
