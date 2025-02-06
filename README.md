@@ -1,18 +1,18 @@
-# crm-app
+# crm-app  - Docker Deployment Process
 ## Tech Stack
 - Frontend: **NextJs/ViteJS - 20**
 - Backend: **Java-SpringBoot - 21**
 - DataBase: **MySQL - 8**
-
-# Docker Deployment Process
 ## Server setup:
-'''
+    Server type: T2.medium server
+    Ports: 22,80,8080,3306
+    
+## Setup Docker:
     sudo apt update
     curl -fsSL https://get.docker.com -o install-docker.sh
     sudo sh install-docker.sh
     sudo usermod -aG docker $USER
     newgrp docker
-'''
 ## Database setup:
 - docker network create crmnetwork
 - docker network ls
