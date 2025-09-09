@@ -31,19 +31,25 @@
 <img width="609" alt="image" src="https://github.com/user-attachments/assets/9102d1c4-acdb-4dcf-bba1-9d74f5863775">
 
 ## Backend Setup
-### backend folder: CRUD
+### backend folder: crm-api
 - Update your database details in this file
   - crm-api/src/main/resources/**application.properties**
 ### Install java: 
-- sudo apt install openjdk-21* -y
-- Java --version
+```
+sudo apt install openjdk-21* -y
+java --version
+```
 ### build backend:
 - Change to backend directory: cd ~/crm-app/crm-api
-- chmod +x mvnw
-- ./mvnw clean package -D skipTest
+```
+chmod +x mvnw
+./mvnw clean package -D skipTest
+```
 - you will get target folder
 - For manually running the application:
-  - java -jar target/CRUD-0.0.1-SNAPSHOT.jar
+```
+java -jar target/CRUD-0.0.1-SNAPSHOT.jar
+```
 - Browser pub-ip:8080
   - you will get message: **Whitelabel Error Page**
 ### Backend service setup:
@@ -59,10 +65,13 @@ SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
 ```
+- enable and start
+```
 - sudo systemctl daemon-reload
 - sudo systemctl start crm-api
 - sudo systemctl status crm-api
 - sudo systemctl enable crm-api
+```
 ##### Check backend in browser: http://pub-ip:8080
  
 ## Frontend Setup 
