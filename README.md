@@ -53,7 +53,7 @@
 [Unit]
 Description=Your Spring Boot Application
 [Service]
-User=azureuser
+User=ubuntu
 ExecStart=/usr/bin/java -jar /home/azureuser/crm-app/crm-api/target/CRM-0.0.1-SNAPSHOT.jar
 SuccessExitStatus=143
 [Install]
