@@ -60,7 +60,7 @@ java -jar target/CRUD-0.0.1-SNAPSHOT.jar
 Description=Your Spring Boot Application
 [Service]
 User=ubuntu
-ExecStart=/usr/bin/java -jar /home/azureuser/crm-app/crm-api/target/CRM-0.0.1-SNAPSHOT.jar
+ExecStart=/usr/bin/java -jar /home/ubuntu/crm-app/crm-api/target/CRM-0.0.1-SNAPSHOT.jar
 SuccessExitStatus=143
 [Install]
 WantedBy=multi-user.target
